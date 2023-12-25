@@ -15,6 +15,11 @@ public class Car {
 
   public void drive() {
     runEngine();
-    System.out.printf("Lets ride!! Driving a %s %n", description);
+    System.out.printf("Lets ride!! Driving a %s.%n", description);
+  }
+
+  public void getObjectInstance() {
+    String objectClass = this.getClass().getSimpleName();
+    System.out.printf("This is an instance of %s %n", objectClass);
   }
 }

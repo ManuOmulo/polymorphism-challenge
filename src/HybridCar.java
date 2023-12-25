@@ -24,12 +24,16 @@ public class HybridCar extends Car {
   @Override
   protected void runEngine() {
     super.runEngine();
-    System.out.printf("running on %d engine with a %dkWh backup battery and a range of %f %n", cylinders, batterySize, avgKmPerLitre);
+    System.out.printf("running on a %d cylinder engine with a %dkWh backup battery and a range of %.2f km/l %n", cylinders, batterySize, avgKmPerLitre);
   }
 
   @Override
   public void drive() {
     runEngine();
     System.out.println("Driving the furthest");
+  }
+
+  public void getObjectInstance() {
+    super.getObjectInstance();
   }
 }

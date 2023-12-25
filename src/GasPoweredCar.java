@@ -22,12 +22,16 @@ public class GasPoweredCar extends Car {
   @Override
   protected void runEngine() {
     super.runEngine();
-    System.out.printf("running on %d engine with a range of %f %n", cylinders, avgKmPerLitre);
+    System.out.printf("running on a %d cylinder engine with a range of %.2f km/l %n", cylinders, avgKmPerLitre);
   }
 
   @Override
   public void drive() {
     runEngine();
     System.out.println("Driving off loud");
+  }
+
+  public void getObjectInstance() {
+    super.getObjectInstance();
   }
 }

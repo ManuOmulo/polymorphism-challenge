@@ -22,12 +22,16 @@ public class ElectricCar extends Car {
   @Override
   protected void runEngine() {
     super.runEngine();
-    System.out.printf("running on %dkWh engine with a range of %f %n", batterySize, avgKmPerCharge);
+    System.out.printf("running on %dkWh engine with a range of %.2f km/c %n", batterySize, avgKmPerCharge);
   }
 
   @Override
   public void drive() {
     runEngine();
     System.out.println("Zooming off fast..");
+  }
+
+  public void getObjectInstance() {
+    super.getObjectInstance();
   }
 }
